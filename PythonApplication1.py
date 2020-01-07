@@ -27,14 +27,14 @@ end = 1
 spacesNeeded = 0
 while end < len(key):                                     #dont exit untill we have printed all the names in the key
     for name in key:                                  
-        format = ""
+        formatted = ""
         if list1[name] == wantedVal:                      #print all names in the key with highest value, then highest-1, and so on
             spacesNeeded = length - len(name)             #find number of spaces needed to format
             i = 0
             while i < spacesNeeded:
-                format = format + " "
+                formatted = formatted + " "
                 i += 1                                    #add formatting spaces so that all names are the same length
-            print(format + name + " | ", end = ' ', file = out)
+            print(formatted + name + " | ", end = ' ', file = out)
             i = 0
             while i < wantedVal:
                 print("=", end = '', file = out)
